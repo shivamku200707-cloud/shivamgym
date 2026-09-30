@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iron Beast Gym</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+header{
+background:black;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:26px;
+font-weight:bold;
+color:#ff4500;
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ff4500;
+}
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url("https://images.unsplash.com/photo-1571902943202-507ec2618e8f");
+background-size:cover;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero button{
+margin-top:20px;
+padding:12px 30px;
+font-size:18px;
+border:none;
+background:#ff4500;
+color:white;
+cursor:pointer;
+}
+
+section{
+padding:80px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+font-size:36px;
+color:#ff4500;
+}
+
+/* programs */
+
+.programs{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1c1c1c;
+padding:30px;
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+/* trainers */
+
+.trainers{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.trainer{
+background:#1c1c1c;
+padding:20px;
+width:250px;
+text-align:center;
+border-radius:10px;
+}
+
+.trainer img{
+width:100%;
+border-radius:10px;
+}
+
+/* pricing */
+
+.pricing{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.price-card{
+background:#1c1c1c;
+padding:30px;
+width:250px;
+border-radius:10px;
+text-align:center;
+}
+
+.price-card h3{
+color:#ff4500;
+}
+
+/* gallery */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:10px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+/* bmi */
+
+.bmi{
+text-align:center;
+text-emphasis-color: red;
+}
+
+.bmi input{
+padding:10px;
+margin:10px;
+width:150px;
+}
+
+.bmi button{
+padding:10px 20px;
+background:#ff4500;
+border:none;
+color:white;
+}
+
+/* contact */
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+form input, form textarea{
+padding:10px;
+border:none;
+}
+
+form button{
+padding:12px;
+background:#ff4500;
+border:none;
+color:white;
+font-size:16px;
+}
+
+footer{
+background:black;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Iron Beast Gym</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#programs">Programs</a>
+<a href="#trainers">Trainers</a>
+<a href="#pricing">Pricing</a>
+<a href="#gallery">Gallery</a>
+<a href="#bmi">BMI</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<!-- hero -->
+
+<div class="hero">
+<div>
+<h1>Transform Your Body</h1>
+<p>Train Hard. Stay Strong.</p>
+<button>Join Now</button>
+</div>
+</div>
+
+<!-- programs -->
+
+<section id="programs">
+
+<h2>Our Programs</h2>
+
+<div class="programs">
+
+<div class="card">
+<h3>Bodybuilding</h3>
+<p>Build strength and muscle with expert trainers.</p>
+</div>
+
+<div class="card">
+<h3>Cardio Fitness</h3>
+<p>Improve stamina and burn calories faster.</p>
+</div>
+
+<div class="card">
+<h3>Weight Loss</h3>
+<p>Special fat loss training programs.</p>
+</div>
+
+<div class="card">
+<h3>Yoga</h3>
+<p>Improve flexibility and mental health.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- trainers -->
+
+<section id="trainers">
+
+<h2>Expert Trainers</h2>
+
+<div class="trainers">
+
+<div class="trainer">
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+<h3>Rahul Singh</h3>
+<p>Strength Coach</p>
+</div>
+
+<div class="trainer">
+<img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1">
+<h3>Aman Verma</h3>
+<p>Bodybuilding Trainer</p>
+</div>
+
+<div class="trainer">
+<img src="https://images.unsplash.com/photo-1546484959-fac4f6f5d3d6">
+<h3>Sneha Patel</h3>
+<p>Yoga Trainer</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- pricing -->
+
+<section id="pricing">
+
+<h2>Membership Plans</h2>
+
+<div class="pricing">
+
+<div class="price-card">
+<h3>Basic</h3>
+<h1>₹999</h1>
+<p>1 Month</p>
+</div>
+
+<div class="price-card">
+<h3>Standard</h3>
+<h1>₹2499</h1>
+<p>3 Months</p>
+</div>
+
+<div class="price-card">
+<h3>Premium</h3>
+<h1>₹6999</h1>
+<p>1 Year</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- gallery -->
+
+<section id="gallery">
+
+<h2>Gym Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1517960413843-0aee8e2b3285">
+<img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b">
+<img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48">
+<img src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c">
+
+</div>
+
+</section>
+
+<!-- bmi -->
+
+<section id="bmi">
+
+<h2>BMI Calculator</h2>
+
+<div class="bmi">
+
+<input type="number" id="height" placeholder="Height (cm)">
+<input type="number" id="weight" placeholder="Weight (kg)">
+
+<br>
+
+<button onclick="calculateBMI()">Calculate</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+</section>
+
+<!-- contact -->
+
+<section id="contact">
+
+<h2>Join Our Gym</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email" required>
+
+<input type="tel" placeholder="Phone">
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 Iron Beast Gym | All Rights Reserved</p>
+
+</footer>
+
+<script>
+
+function calculateBMI(){
+
+let h = document.getElementById("height").value/100;
+let w = document.getElementById("weight").value;
+
+let bmi = w/(h*h);
+
+document.getElementById("result").innerText =
+"Your BMI is " + bmi.toFixed(2);
+
+}
+
+</script>
+
+</body>
+</html>
